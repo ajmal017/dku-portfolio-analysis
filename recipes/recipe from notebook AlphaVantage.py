@@ -27,6 +27,8 @@ def get_daily_ts(symbol):
         }
 
     r = requests.get(url, params=data)
+    print symbol
+    print json.loads(r.text).get('Time Series (Daily)')
     df = pd.DataFrame(json.loads(r.text).get('Time Series (Daily)')).transpose().reset_index()
     df.columns = ['Date','Open','High','Low','Close','Adj_Close','Volume','Dividend_amount','Split_coeff']
     df.insert(loc=1, column='Symbol', value=symbol)
@@ -45,11 +47,18 @@ with open(file_path,'rb') as f:
 symbols = [position.get('name') for position in holdings['holdings']]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+import time
+
 end_df = pd.DataFrame()
 
 for symbol in symbols:
     df = get_daily_ts(symbol)
+    time.sleep(20)
     end_df = end_df.append(df, ignore_index=True)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+import time
+time.sleep(60)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
