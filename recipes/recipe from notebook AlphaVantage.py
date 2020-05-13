@@ -54,4 +54,7 @@ for symbol in symbols:
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
 v21fn3jz = dataiku.Folder("V21Fn3jz")
-v21fn3jz_info = v21fn3jz.get_info()
+out_path = v21fn3jz.get_path()
+
+file_path = os.path.join(out_path,'rates.csv')
+end_df.to_csv(file_path, index=False)
