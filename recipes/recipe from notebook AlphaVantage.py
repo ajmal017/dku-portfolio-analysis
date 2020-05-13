@@ -56,11 +56,8 @@ for symbol in symbols:
     time.sleep(20)
     end_df = end_df.append(df, ignore_index=True)
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-import time
-time.sleep(60)
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+
 # Recipe outputs
 v21fn3jz = dataiku.Folder("V21Fn3jz")
 out_path = v21fn3jz.get_path()
