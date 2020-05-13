@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589406778824
+    "lastModifiedOn": 1589406844265
   },
   "creationTag": {
     "versionNumber": 0,
@@ -124,6 +124,10 @@
       },
       {
         "name": "Split_coeff",
+        "type": "double"
+      },
+      {
+        "name": "10d_Adj_Close_avg",
         "type": "double"
       }
     ],
