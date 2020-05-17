@@ -171,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589301457127
+    "lastModifiedOn": 1589713953426
   },
   "creationTag": {
     "versionNumber": 0,
@@ -196,34 +196,35 @@
   "checklists": {
     "checklists": [
       {
-        "title": "Your new project\u0027s Todo",
+        "id": "651771",
+        "title": "Todo list",
         "createdOn": 0,
         "items": [
           {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1589301372766,
+            "done": false,
+            "text": "50 and 200 days EMA",
+            "createdOn": 1589713932668,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1589301372766,
+            "text": "16 and 26 EMA\n",
+            "createdOn": 1589713939358,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Import your [first dataset](projects/PORTFOLIOANALYSIS/datasets/new/)",
-            "createdOn": 1589301372766,
+            "text": "MACD ",
+            "createdOn": 1589713943169,
             "createdBy": "admin",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1589301372766,
+            "text": "Percentage Price Oscillator\n",
+            "createdOn": 1589713953341,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
