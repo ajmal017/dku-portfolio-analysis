@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589706886794
+    "lastModifiedOn": 1589726744315
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,77 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Symbol",
+        "type": "string"
+      },
+      {
+        "name": "Open",
+        "type": "double"
+      },
+      {
+        "name": "High",
+        "type": "double"
+      },
+      {
+        "name": "Low",
+        "type": "double"
+      },
+      {
+        "name": "Close",
+        "type": "double"
+      },
+      {
+        "name": "Adj_Close",
+        "type": "double"
+      },
+      {
+        "name": "Volume",
+        "type": "bigint"
+      },
+      {
+        "name": "Dividend_amount",
+        "type": "double"
+      },
+      {
+        "name": "Split_coeff",
+        "type": "double"
+      },
+      {
+        "name": "ema_10",
+        "type": "double"
+      },
+      {
+        "name": "ema_20",
+        "type": "double"
+      },
+      {
+        "name": "ema_50",
+        "type": "double"
+      },
+      {
+        "name": "ema_12",
+        "type": "double"
+      },
+      {
+        "name": "ema_26",
+        "type": "double"
+      },
+      {
+        "name": "macd",
+        "type": "double"
+      },
+      {
+        "name": "signal_line",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
