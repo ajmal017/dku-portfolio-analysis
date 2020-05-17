@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589726744315
+    "lastModifiedOn": 1589728185510
   },
   "creationTag": {
     "versionNumber": 0,
@@ -152,6 +152,10 @@
       },
       {
         "name": "signal_line",
+        "type": "double"
+      },
+      {
+        "name": "distance_to_signal",
         "type": "double"
       }
     ],
