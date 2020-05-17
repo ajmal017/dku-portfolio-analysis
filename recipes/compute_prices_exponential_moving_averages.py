@@ -17,6 +17,7 @@ for symbol in df['Symbol'].unique():
         foo['ema_%s' % str(lag)] = foo['Adj_Close'].ewm(span=lag,min_periods=0,adjust=False,ignore_na=False).mean()
     foo['macd'] = foo['ema_12']-foo['ema_26']
     foo['signal_line'] = foo['macd'].ewm(span=9, adjust=False).mean()
+    foo['distance_to_signal'] = foo['macd'] - foo['signal_line']
     final_df = final_df.append(foo, ignore_index=True)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
