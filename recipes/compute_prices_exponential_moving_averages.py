@@ -15,9 +15,12 @@ for symbol in df['Symbol'].unique():
     foo = df[df['Symbol']==symbol]
     for lag in [10,20,50,12,26]:
         foo['ema_%s' % str(lag)] = foo['Adj_Close'].ewm(span=lag,min_periods=0,adjust=False,ignore_na=False).mean()
-    foo['macd'] = foo['ema_12']-foo['ema_26']
-    foo['signal_line'] = foo['macd'].ewm(span=9, adjust=False).mean()
-    foo['distance_to_signal'] = foo['macd'] - foo['signal_line']
+    foo['macd'] = foo['ema_12']-foo['ema_26']    
+    foo['signal_line_macd'] = foo['macd'].ewm(span=9, adjust=False).mean()
+    foo['macd_histogram'] = foo['macd'] - foo['signal_line_macd']
+    foo['ppo'] = 100*(foo['ema_12']-foo['ema_26']) / foo['ema_26']
+    foo['signal_line_ppo'] = foo['ppo'].ewm(span=9, adjust=False).mean()
+    foo['ppo_histogram'] = foo['ppo'] - foo['signal_line_ppo']
     final_df = final_df.append(foo, ignore_index=True)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
