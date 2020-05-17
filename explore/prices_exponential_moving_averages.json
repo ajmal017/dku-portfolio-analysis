@@ -283,8 +283,8 @@
       "def": {
         "type": "multi_columns_lines",
         "variant": "normal",
-        "name": "Avg. of Close by Date",
-        "userEditedName": false,
+        "name": "MACD ",
+        "userEditedName": true,
         "genericDimension0": [
           {
             "column": "Date",
@@ -293,7 +293,7 @@
               "emptyBinsMode": "AVERAGE"
             },
             "dateParams": {
-              "mode": "AUTOMATIC"
+              "mode": "DAY"
             },
             "maxValues": 0,
             "generateOthersCategory": true,
@@ -309,12 +309,45 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of Close, descending"
+                "label": "Average of signal_line, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
+                "label": "Average of signal_line, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of Close, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
                 "label": "Average of Close, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of macd, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of macd, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Average of distance_to_signal, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Average of distance_to_signal, ascending",
                 "sortAscending": true
               }
             ],
@@ -330,6 +363,17 @@
         "animationDimension": [],
         "genericMeasures": [
           {
+            "column": "signal_line",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "line",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
             "column": "Close",
             "function": "AVG",
             "type": "NUMERICAL",
@@ -337,6 +381,28 @@
             "isA": "measure",
             "displayAxis": "axis1",
             "displayType": "line",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "macd",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "line",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "distance_to_signal",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis2",
+            "displayType": "column",
             "computeMode": "NORMAL",
             "computeModeDim": 0
           }
@@ -365,12 +431,12 @@
             "columnType": "ALPHANUM",
             "isA": "filter",
             "excludedValues": {
+              "PTON": true,
               "MELI": true,
               "ZM": true,
               "SHAK": true,
               "AAPL": true,
               "ADBE": true,
-              "NVDA": true,
               "ROKU": true,
               "___dku_no_value___": true
             },
@@ -385,7 +451,7 @@
         "showXAxis": false,
         "showInChartValues": false,
         "showInChartLabels": true,
-        "strokeWidth": 1,
+        "strokeWidth": 2,
         "fillOpacity": 0.6,
         "showXAxisLabel": true,
         "showYAxisLabel": true,
@@ -400,7 +466,7 @@
         "colorOptions": {
           "singleColor": "#2678B1",
           "transparency": 0.75,
-          "colorPalette": "default",
+          "colorPalette": "dku_dss_next",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
@@ -436,7 +502,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABGElEQVRoQ2NkGGGAcYT5l2HEeFiqYTPXswbfbyPGw7CUPOrh4Z6nh38M///PyMDI+H80SQ/3pDwaw6MxPExDgKxSWrFim9v9Dq9d+MJEpnCH0JN+j3eDLdzweli9bCPvd0bmJgaG/z8YGBifPer0mTzYPECqe7B6WLF0i+39bp/DpBpGL/VaDavYrjWE/SLHPrKSNDkWGafNZH0jKNXxsNO3GFm/QsWmwgcdfv3kmEmOHrp5mBzH0ULPqIdpEaqDyczRGB5MsUELt4zGMC1CdTCZORrDgyk2aOGW0RimRagOJjNHY3gwxQYt3DIaw7QI1cFk5mgMD6bYoIVbRmOYFqE6mMwcjeHBFBu0cMtoDNMiVAeTmSMuhgHicigpEc0mMQAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADOUlEQVRoQ2NkGAGg57j9vBLLg0kgrzLSy789R+0nlVgfzKOXfbjsoZuHB9qjMPtp7uGeY/abSqwO+tHawz1H7LaV2BzyImQPzT2M7oDeYw4+xVYHtoDEG/43MDUwNvwj5EhqytPdw9R0PDlmkeXh3qP2izl+MWZ+Z/u/rsT6oBs5FiPr6T1qt/MfI+PJUquDdaji9tOKrQ9mgcQmbfNk/yP41b/I8tAqSuzD6eHuo3YtzIwMK4usDl1etSqUOSxs9V9CFnUftXMqtT60j5A6XPIdh63lKmyPPiJXPzH6yIphYgwerGoGpYcb9juwNDge+EOLQBt0Hu45am9aYn3wNC08S9eWFq08QKq5gy6GSfUAqepHPUxqiA019aMxPNRijFT3jsYwqSFGrPovZab9PF2nC4lVTyt1dIthkIf/MzIY8HaediTVM5/LTfdj03c7V4VddfKdn6SYRzcPfy4zm8zA+F+HXA+DPIWu92O5aT5/5+mJw8rDH8rMTJgZ/3fDPAyLbRDN8J9hNW/X6WmjHsYTAjRP0vAYgSZpbEkTXwwRE8O48jg2c8ny8OdSs1De7lOrCSWlb4WW0n/Z/iwB5T1YHqaVhxn+M0zm7Tq9DpvnP5QaKwt0n71Lcm/pf4keN2PPpa9fy0xr/zEyOIE88qPGSpmj5RjYMHTwqcw8kZHxXxyP7weGL5sEr0yW8nLJfb71Ba/5st8Mf375MIRp/yIUaIRimMf/g+SXTQI23K6fBL6ys7/ddcVE/rGy8B9Rpo/cl/4qfuv8GvJQ7ccznltR9tYkexif475UmHX8Y/gvwddxOoFQEkMpeBgYGP4zMdcw/vvbAgrAqJnzrsy8N/0mb+fpYJh9/4+qxTJa31rMsO5OHsP/f/wMwWrNhALqU7lpO1/n6Up0dWQlaVyWfaowXQDyMCHH4PPw5zLTFcwCf/9w2n3mZLS5Dfc0ITOJlaeqh4m1lJCHGRgZ3vF2ngaPVlIbDLiHQcn4U6WFNSxJg2J42HoYFnvD3sMYpXm5qRUjA0MrpPoahjGML1+OepjKpdaAFFqjMYwUAiMySfN2nY6gckqGGzfokjStPAozd9TDtA7hgTYfAO/5rDgOnVW5AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
