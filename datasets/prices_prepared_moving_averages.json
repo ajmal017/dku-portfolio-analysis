@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589406844265
+    "lastModifiedOn": 1589726907887
   },
   "creationTag": {
     "versionNumber": 0,
@@ -127,7 +127,15 @@
         "type": "double"
       },
       {
-        "name": "10d_Adj_Close_avg",
+        "name": "sma_10",
+        "type": "double"
+      },
+      {
+        "name": "sma_20",
+        "type": "double"
+      },
+      {
+        "name": "sma_50",
         "type": "double"
       }
     ],
