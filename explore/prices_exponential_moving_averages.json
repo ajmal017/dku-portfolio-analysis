@@ -270,7 +270,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACWUlEQVRoQ2NkGGGAcYT5l4GuHv7fwK3H2PD10kAGMs09/L+Bbwpjw6ecgfQkst0ke/h/HW8yY9PnueR64H8dXzZj06ep5OqnVB/JHoZZ+D+NgZVxFsNvQg5QKNuc8aDLdwa6OrnyTRUMTCybHrV7XSNkBjXlyfYwsiNkyjfoPukMuEyqw/43CPEx/P2nyNj84eL64y8zAy3Fp5NqBiH1/xu4JRgbvr6AqaOKh0GGrTn2IinESmIeIQfAU0gtnylj86fTxKonV93/Zl51xppPtxgYGf+DzMDq4f+NfJGM9Z+WI1siX7LJqS/Y1CTYUrKLXMtJ1bf2+PP6YEvJRkL6/tfyhzE2f1z1/z8DIyMjA9hjuADeGP5fz9fL2PipmJCF1JD/XyeQyNj0YT4uszYcf2EeYClxEl3+fzWfBWPrpxPwlNPAl8fY8GkSiC9fsc1wYpCxZYCZ+DSqJ2lqeJoeZlAtD9PDsdSwY1B5+H8dfwtj08caQh6TK9ta/6jLm2DexmbOoPIwIY9SQ37Qevh/rYA+A/N/VcaGj2sQBZIUF2PDs2+UeHzQepgST5FdLdHK0oE0dzSGBzL06WH3aAzTI5QH0o7RGB7I0KeH3aMxTI9QHkg7RmN4IEOfHnaPxjA9Qnkg7RiN4YEMfXrYPWJi+P/uCkNG147zI8bDeIdp/++qcGP4/1+I0b1zxf/dFTkMDIxfGV3bcY4Z0yMpUsuOQRPDoIBldO2YQi2P4TJn0HgY2YH/91RaMrq0H0cTK2J0ae+jNEAGpYcp9dToIB5SCIzGMC2T02AwGwBooZIpe6cv/wAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACZ0lEQVRoQ+2YQWgTURBAZ25W2CCCpdo2VdGzeoyeCmlKyRZKxV48eArWg4ggaWKN+Wlauwl68RbqxYOiFoOQBklTqaeG4kWhePJgo4SqIJK1CmJ3JEKwJE2a3eVnN+bnuJmZP2/e/wv7Edrsh+3CS2zfYWTf3v/3wMT29yD7+rEstg2ApRFk6rOmAFNIcmFUzVUeG+dEyoeII+uK7G32kTJtmMKONBC8wqki2948MccxZMV35WdO/0IiH5cvVsOnr/zu0OYKbPhHM+BNA/8DSofzcW+ksunk6qcTRODe+omJsf7O77tBPc1tZM+6ugZ2izP6vy5gCknzANo0RjffOP3pYD7unS0tnMxtLIMGl0fPdK3paYSYdA2ZeltPjp5YuildwCn1/vacmsB3n7yMHOw5njl3unullEDMsYSs6NazoB1ik7nPc6OuTl9TXlpmgfv8qfPr8eEHlXVSqcLeXwfwEhLKp9ZuHD3iu9dXinFOLGTzMbnucdC1pc0CNJJfaycdmsz0FmYGPzRSo16M7YAbAaKwtIwRtb+R2MqYlgQ2AtoSZ9gMWK1cYZjHVO1UUxi2kw0evQjDPKZqp5rCsJ1s8OhFGOYxVTvVFIbtZINHL8Iwj6naqaZhw7QYCKFHie4EQ5nJXsCtMfQod+hFYBwI50HTZtATG+cFT0tBGYiGAKAbCN4CwhfQaBUHY3/v5Gz3PUzPgy4cmq26tK83IMoGEjigVN11t+QVDy1eP4meW6/LzdPK1Q7Y3PMQkB6hW3lsdKcY3tJGF7Q6TwBbbYD3+sIw7wlbXV8YttoA7/WFYd4Ttrr+H8gHqylLArDuAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -309,45 +309,45 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of signal_line, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of signal_line, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
                 "label": "Average of Close, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 1,
+                "measureIdx": 0,
                 "label": "Average of Close, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 2,
+                "measureIdx": 1,
                 "label": "Average of macd, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 2,
+                "measureIdx": 1,
                 "label": "Average of macd, ascending",
                 "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 3,
-                "label": "Average of distance_to_signal, descending"
+                "measureIdx": 2,
+                "label": "Average of macd_histogram, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of macd_histogram, ascending",
+                "sortAscending": true
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 3,
-                "label": "Average of distance_to_signal, ascending",
+                "label": "Average of signal_line_macd, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 3,
+                "label": "Average of signal_line_macd, ascending",
                 "sortAscending": true
               }
             ],
@@ -362,17 +362,6 @@
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
-          {
-            "column": "signal_line",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "line",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
           {
             "column": "Close",
             "function": "AVG",
@@ -390,19 +379,30 @@
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
-            "displayAxis": "axis1",
+            "displayAxis": "axis2",
             "displayType": "line",
             "computeMode": "NORMAL",
             "computeModeDim": 0
           },
           {
-            "column": "distance_to_signal",
+            "column": "macd_histogram",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
             "displayAxis": "axis2",
             "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "signal_line_macd",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis2",
+            "displayType": "line",
             "computeMode": "NORMAL",
             "computeModeDim": 0
           }
@@ -435,8 +435,8 @@
               "MELI": true,
               "ZM": true,
               "SHAK": true,
-              "AAPL": true,
               "ADBE": true,
+              "NVDA": true,
               "ROKU": true,
               "___dku_no_value___": true
             },
@@ -502,7 +502,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADOUlEQVRoQ2NkGAGg57j9vBLLg0kgrzLSy789R+0nlVgfzKOXfbjsoZuHB9qjMPtp7uGeY/abSqwO+tHawz1H7LaV2BzyImQPzT2M7oDeYw4+xVYHtoDEG/43MDUwNvwj5EhqytPdw9R0PDlmkeXh3qP2izl+MWZ+Z/u/rsT6oBs5FiPr6T1qt/MfI+PJUquDdaji9tOKrQ9mgcQmbfNk/yP41b/I8tAqSuzD6eHuo3YtzIwMK4usDl1etSqUOSxs9V9CFnUftXMqtT60j5A6XPIdh63lKmyPPiJXPzH6yIphYgwerGoGpYcb9juwNDge+EOLQBt0Hu45am9aYn3wNC08S9eWFq08QKq5gy6GSfUAqepHPUxqiA019aMxPNRijFT3jsYwqSFGrPovZab9PF2nC4lVTyt1dIthkIf/MzIY8HaediTVM5/LTfdj03c7V4VddfKdn6SYRzcPfy4zm8zA+F+HXA+DPIWu92O5aT5/5+mJw8rDH8rMTJgZ/3fDPAyLbRDN8J9hNW/X6WmjHsYTAjRP0vAYgSZpbEkTXwwRE8O48jg2c8ny8OdSs1De7lOrCSWlb4WW0n/Z/iwB5T1YHqaVhxn+M0zm7Tq9DpvnP5QaKwt0n71Lcm/pf4keN2PPpa9fy0xr/zEyOIE88qPGSpmj5RjYMHTwqcw8kZHxXxyP7weGL5sEr0yW8nLJfb71Ba/5st8Mf375MIRp/yIUaIRimMf/g+SXTQI23K6fBL6ys7/ddcVE/rGy8B9Rpo/cl/4qfuv8GvJQ7ccznltR9tYkexif475UmHX8Y/gvwddxOoFQEkMpeBgYGP4zMdcw/vvbAgrAqJnzrsy8N/0mb+fpYJh9/4+qxTJa31rMsO5OHsP/f/wMwWrNhALqU7lpO1/n6Up0dWQlaVyWfaowXQDyMCHH4PPw5zLTFcwCf/9w2n3mZLS5Dfc0ITOJlaeqh4m1lJCHGRgZ3vF2ngaPVlIbDLiHQcn4U6WFNSxJg2J42HoYFnvD3sMYpXm5qRUjA0MrpPoahjGML1+OepjKpdaAFFqjMYwUAiMySfN2nY6gckqGGzfokjStPAozd9TDtA7hgTYfAO/5rDgOnVW5AAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADJklEQVRoQ+2YTWgTQRiGv4lSDyV4KIgUPEizxZM91UiyZmmVtuCpSa0V8SAeSsGfQzZEezEna5oN+FMQERG8aH9s7UEwhTZsyAZi8KAHKdn2JkUPFaS00IIZmditaUzqZDPJrrh72rDf9877fO/MhgTBf3YhJryvls+Cr+VNXmsCN0A/2trRnVbj4OU68p9n1LfQy/UwWVOnCBtgnYvn26aWOehrUauR+KO3cMhFD+mAiQCG9+DjRLbGlgbA63ipSzOEbRBCuV29e4BqdXTAuhz9pWmXOYwAEAYKw3nVaXUOvFzX9v3vI0Ph0zhgCnMwo7ZAL7dMU0pbYz5gkjK5tBcduZ/MemG/rRl6HWO0YOXqzAesOX2x2AwXjq1UC1jcb15g1qTbehZwjQZrGlkrYdNEUSMjVsI1GqxpZK2ETRMFAyMhHLKFUGjXDwwmCUcVz2viL4fRpwAvDzPwWpVEJCkEArwcwRPn9qH+yR+FYrqBoynhlt8lj6wHTww2ht89LhSNpD2dAWdiYS3YHt/CtktNo+nPVREwbNYFHFU8U353ou+LeLzxsPRxvRI/6jXHAe7h0mYlPTjJxRGv/vrXpMqrImApJcRFl9xBkrOHM0wM0PgnwACwgnj1olYfiXU1Brrn1iVFeCC65es0OqSGCpiADs5u3LaHM4lSwljh7gGGNgD0FfHZAZxqfQ45fKRcKpIiPBmc3ThqH82cKWcUJ7kYADQQDQ0YAJoB4BviVR9OOsYB0KFKk6cCpp1eWfMK9wy51cvac5xsHQHAJ8GGhiCHHwGGTXRK7cFK6zxgQIjPdla7Zrn+ugCX3BVkm9rQEHJlF3cGQQk8lj7ddNU5v6pnKIYBa+8DYvr7Tef9g3fTN2gApKQwLPLyHZraUjWGARMzUkp4KrrkK1HFE/O7E916ISrpMxS45FYnZxgBLvWscFdUAllYaypgSREWRLdcsxcW9deS3mnq7VsLto/bw5nzevv36jNVwrUALNY0JbB2Vlmc2X8CmJiMpjva/M74B9apmzJh1pCmfUvXElTTthKux5SNXMNK2Mjp12NtK+F6TNnINX4CIdf8KcP5AKsAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
