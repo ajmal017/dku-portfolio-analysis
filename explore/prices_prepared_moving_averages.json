@@ -157,8 +157,8 @@
             "excludedValues": {
               "AAPL": true,
               "ADBE": true,
-              "MELI": true,
               "NVDA": true,
+              "PTON": true,
               "ROKU": true,
               "SHAK": true,
               "ZM": true,
@@ -226,7 +226,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACWklEQVRoQ+2VO2/TUBTHryXU+FFRYO3EzJraAQmJIKi4Tm0iaBES4uFMwECHfgDEB2DoAkwxFCEh+lDJbXxRQQoSEsRuJCZmJlZQUf0IryIPQU6UJrXqay74evQ953/O//6OjzmQsYfLmF+QCcMfwMzIEbD4LYSbCcPRKWaG//dvOlOEJc1oZMpwppaWMGVM+2vm0j9P2OZhXQlwadDukXRj3a2Zk0QI2wJcVHw8k9byew/KB74L7QXZx3pvzaYACwUfNxP5LbVEWP75i7ulBNbJ3kLvRPX6Uc96kJbpaJ03Y6WDxzfrXyTNmHeROTuqGXe2kHm7E9M10pJemXNr1btRAYdXX8qBdTpO8zZ/5qoSvHgU5ojatQkPPdyIkx83Nty+LjKLTk5dltvWeScH5+Q27vLR13DnpahXVrxa9Vy3cdiQA1zcBoDjANiO29SoVrmwharPwjybV+8rgXUjrkYS8bGWVlOA0wUfL+2msCOo87JvzUZjRd1AXs3UOu8cHj6VA3xxN3r9Yg7BS/s/4ydf4+THMhxHeFhsA5zYVwSvf/yZKs1Y9ZBZHpTXypVu5tv1e50RHlaj33mqhltAE/MAecMabYFTY3nwarM3TjhrHPOfm2+H5Q86T9XwTo3YvHZYCdDH8LwvvcnLElh/7O7F6MCllYRwEhrC1JVxf23hUxJa1Bre4GFlIsDVJE1GtagYaVLm/vrSStPYTrUYYRookOyBESZ5uzRoM8I0UCDZAyNM8nZp0GaEaaBAsgdGmOTt0qDNCNNAgWQPjDDJ26VBmxGmgQLJHn4DCfOioXFTfdwAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACXUlEQVRoQ2NkGGGAcaT49z8DAyMjA8P/Ye/hUxye+81+bHeERSzdPXyS3bPT/Of2cnqlrBOcXlMtvm/LpouHT3F4VZj92NYBsgw5pLl9E/frfvyte5mf9fLXzfPhoU+PQKAohvczOHA4Mhz4gZ5sYPxTXJ6Z6WYibbd4WS6off5jcP7AYkFsngIFAK09DrODbA/DPHWVIZTNzJdn538GhjvfNs9Pxeahc6w++ka/t1zEFYOgAoXHN3EfrTyNHKBkexjkeC6/xLXfNs0PJjcpnuLwsmNg+N8IKlRAAejtq+j7evW0L+Sah00fuhvxevgUp9cUhv//taer8cmdEWV/dXnvIktQaIEMplVskOPZkxyeLYwMDD8ZGBicYIE3UZNPYYMM98qvm+dVIJtJUgyf5PDcY/5juws5jiJGDyiWQepAjiY2X99m8GRXZdgO8iwDSM+Rw+8DDT9s+IDLPpI8TIyjKVWDXgDiMg+mbj9DKI8jw+ovXL6Js3GVIWTHMKWeIVY/zDNcfknrvm2aF0SsPmLUDboYhjn6NIe3kumPrfdAfB7vhKAvWxesO8bnLmT1aec7WIBAk70TAwPDf2I8C1IzaD18kt0rnZmF4ZjJ122XQQ49yeFd7eIquvYfA+P0r5KsbgyzZv0m1pODPkmT4xFi9QzaGCbWA6SqG/UwqSE21NSPxvBQizFS3Tsaw6SG2FBTPxrDQy3GSHXvaAyTGmJDTf1oDA+1GCPVvaMxTGqIDTX1ozE81GKMVPeOxjCpITbU1I/G8FCLMVLdOxrDpIbYUFM/GsNDLcZIdS8AJh3NKeaip0sAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
