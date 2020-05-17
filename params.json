@@ -171,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589728959785
+    "lastModifiedOn": 1589729075943
   },
   "creationTag": {
     "versionNumber": 0,
@@ -232,6 +232,13 @@
             "done": false,
             "text": "Relative strength index",
             "createdOn": 1589728959629,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "On-Balance Volume",
+            "createdOn": 1589729075873,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
