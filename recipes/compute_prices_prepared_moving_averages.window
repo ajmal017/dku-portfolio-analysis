@@ -280,6 +280,46 @@
       "limitPreceding": true,
       "windowLowerBound": 0,
       "enableLimits": true
+    },
+    {
+      "windowLimitMode": "ROWS",
+      "enablePartitioning": true,
+      "prefix": "w2",
+      "enableOrdering": true,
+      "precedingRows": 20,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "Date",
+          "desc": false
+        }
+      ],
+      "limitPreceding": true,
+      "followingRows": 0,
+      "enableLimits": true,
+      "partitioningColumns": [
+        "Symbol"
+      ]
+    },
+    {
+      "windowLimitMode": "ROWS",
+      "enablePartitioning": true,
+      "prefix": "50",
+      "enableOrdering": true,
+      "precedingRows": 50,
+      "limitFollowing": true,
+      "orders": [
+        {
+          "column": "Date",
+          "desc": false
+        }
+      ],
+      "limitPreceding": true,
+      "followingRows": 0,
+      "enableLimits": true,
+      "partitioningColumns": [
+        "Symbol"
+      ]
     }
   ],
   "computedColumns": [],
@@ -330,6 +370,14 @@
           {
             "name": "10d_Adj_Close_avg",
             "type": "double"
+          },
+          {
+            "name": "w2_Adj_Close_avg",
+            "type": "double"
+          },
+          {
+            "name": "50_Adj_Close_avg",
+            "type": "double"
           }
         ],
         "userModified": false
@@ -377,5 +425,9 @@
   "rank": false,
   "denseRank": false,
   "rowNumber": false,
-  "outputColumnNameOverrides": {}
+  "outputColumnNameOverrides": {
+    "10d_Adj_Close_avg": "sma_10",
+    "w2_Adj_Close_avg": "sma_20",
+    "50_Adj_Close_avg": "sma_50"
+  }
 }
