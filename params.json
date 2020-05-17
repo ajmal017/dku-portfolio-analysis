@@ -171,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589713953426
+    "lastModifiedOn": 1589728959785
   },
   "creationTag": {
     "versionNumber": 0,
@@ -225,6 +225,13 @@
             "done": false,
             "text": "Percentage Price Oscillator\n",
             "createdOn": 1589713953341,
+            "createdBy": "admin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Relative strength index",
+            "createdOn": 1589728959629,
             "createdBy": "admin",
             "stateChangedOn": 0
           }
