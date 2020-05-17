@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589728185510
+    "lastModifiedOn": 1589740651865
   },
   "creationTag": {
     "versionNumber": 0,
@@ -151,11 +151,23 @@
         "type": "double"
       },
       {
-        "name": "signal_line",
+        "name": "signal_line_macd",
         "type": "double"
       },
       {
-        "name": "distance_to_signal",
+        "name": "macd_histogram",
+        "type": "double"
+      },
+      {
+        "name": "ppo",
+        "type": "double"
+      },
+      {
+        "name": "signal_line_ppo",
+        "type": "double"
+      },
+      {
+        "name": "ppo_histogram",
         "type": "double"
       }
     ],
