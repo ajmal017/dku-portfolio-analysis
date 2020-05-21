@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590074549518
+    "lastModifiedOn": 1590076590818
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,89 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Symbol",
+        "type": "string"
+      },
+      {
+        "name": "Open",
+        "type": "double"
+      },
+      {
+        "name": "High",
+        "type": "double"
+      },
+      {
+        "name": "Low",
+        "type": "double"
+      },
+      {
+        "name": "Close",
+        "type": "double"
+      },
+      {
+        "name": "Adj_Close",
+        "type": "double"
+      },
+      {
+        "name": "Volume",
+        "type": "bigint"
+      },
+      {
+        "name": "Dividend_amount",
+        "type": "double"
+      },
+      {
+        "name": "Split_coeff",
+        "type": "double"
+      },
+      {
+        "name": "Close_shifted",
+        "type": "double"
+      },
+      {
+        "name": "perc_change",
+        "type": "double"
+      },
+      {
+        "name": "up",
+        "type": "double"
+      },
+      {
+        "name": "down",
+        "type": "double"
+      },
+      {
+        "name": "up_mean",
+        "type": "double"
+      },
+      {
+        "name": "down_mean",
+        "type": "double"
+      },
+      {
+        "name": "rs_sma",
+        "type": "double"
+      },
+      {
+        "name": "rsi_sma",
+        "type": "double"
+      },
+      {
+        "name": "overbought",
+        "type": "bigint"
+      },
+      {
+        "name": "oversold",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
