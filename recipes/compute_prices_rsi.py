@@ -21,7 +21,7 @@ df['down'] = df['perc_change'].apply(lambda x: x if x<0 else 0)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df['up_mean'] = df.groupby('Symbol')['up'].transform(lambda x: x.rolling(14, 1).mean())
-df['down_mean'] = df.groupby('Symbol')['down'].abs().transform(lambda x: x.rolling(14, 1).mean())
+df['down_mean'] = df.groupby('Symbol')['down'].transform(lambda x: x.abs().rolling(14, 1).mean())
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 df['rs_sma'] = df['up_mean'] / df['down_mean']
