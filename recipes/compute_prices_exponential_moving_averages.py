@@ -22,7 +22,7 @@ for symbol in df['Symbol'].unique():
     foo['signal_line_ppo'] = foo['ppo'].ewm(span=9, adjust=False).mean()
     foo['ppo_histogram'] = foo['ppo'] - foo['signal_line_ppo']
     final_df = final_df.append(foo, ignore_index=True)
-
+#
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 prices_exponential_moving_averages = dataiku.Dataset("prices_exponential_moving_averages")
