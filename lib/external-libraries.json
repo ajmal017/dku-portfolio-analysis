@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "/ta": {
+      "remote": "git@github.com:bukosabino/ta.git",
+      "checkout": "refs/heads/master",
+      "remotePath": "/ta"
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "/ta"
   ],
   "rsrcPath": [
     "R"
