@@ -3,7 +3,8 @@
     "/ta": {
       "remote": "git@github.com:bukosabino/ta.git",
       "checkout": "refs/heads/master",
-      "remotePath": "/ta"
+      "remotePath": "/ta",
+      "lastHash": "f283ffb6c29528554f43c19501d340cf5f4e3be1"
     }
   },
   "pythonPath": [
