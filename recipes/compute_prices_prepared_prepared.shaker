@@ -25,7 +25,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -34,7 +37,18 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "High": 100,
+    "Dividend_amount": 128,
+    "Split_coeff": 100,
+    "Low": 100,
+    "Volume": 100,
+    "Symbol": 100,
+    "Adj_Close": 100,
+    "Close": 100,
+    "Date": 183,
+    "Open": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
