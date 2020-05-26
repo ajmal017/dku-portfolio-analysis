@@ -32,6 +32,5 @@ df['overbought'] = df['rsi_sma'].apply(lambda x: 1 if x>=70 else 0)
 df['oversold'] = df['rsi_sma'].apply(lambda x: 1 if x <= 30 else 0)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Write recipe outputs
 prices_rsi = dataiku.Dataset("prices_rsi")
 prices_rsi.write_with_schema(df)
