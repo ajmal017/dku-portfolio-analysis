@@ -23,7 +23,7 @@
     }
   },
   "formatParams": {
-    "style": "excel",
+    "style": "unix",
     "charset": "utf-8",
     "separator": ",",
     "quoteChar": "\"",
@@ -47,8 +47,8 @@
     "normalizeDoubles": true,
     "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
     "readMissingColumnsBehavior": "DISCARD_SILENT",
-    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "readDataTypeMismatchBehavior": "DISCARD_SILENT",
+    "writeDataTypeMismatchBehavior": "DISCARD_SILENT",
     "fileReadFailureBehavior": "FAIL",
     "compress": ""
   },
@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590511160254
+    "lastModifiedOn": 1590511327385
   },
   "creationTag": {
     "versionNumber": 0,
