@@ -1,1 +1,7 @@
- wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=0B6VhzidiLvjSOWdGM0tOX1lUNEk' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=0B6VhzidiLvjSOWdGM0tOX1lUNEk" -P $DKU_OUTPUT_0_FOLDER_PATH && rm -rf /tmp/cookies.txt
+function gdrive_download () {
+  CONFIRM=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://docs.google.com/uc?export=download&id=$1" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
+  wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$CONFIRM&id=$1" -P $2
+  rm -rf /tmp/cookies.txt
+}
+
+gdrive_download 0B6VhzidiLvjSOWdGM0tOX1lUNEk $DKU_OUTPUT_0_FOLDER_PATH
