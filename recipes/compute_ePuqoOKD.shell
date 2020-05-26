@@ -1,1 +1,1 @@
- wget "https://drive.google.com/uc?export=download&id=0B6VhzidiLvjSOWdGM0tOX1lUNEk" -P $DKU_OUTPUT_0_FOLDER_PATH
+ wget --no-check-certificate "https://drive.google.com/uc?export=download&id=0B6VhzidiLvjSOWdGM0tOX1lUNEk" -P $DKU_OUTPUT_0_FOLDER_PATH
