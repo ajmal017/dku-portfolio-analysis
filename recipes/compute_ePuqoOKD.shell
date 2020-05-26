@@ -1,0 +1,1 @@
+ wget https://drive.google.com/file/d/0B6VhzidiLvjSOWdGM0tOX1lUNEk/torontobooks_unigrams.bin -P $DKU_OUTPUT_0_FOLDER_PATH
