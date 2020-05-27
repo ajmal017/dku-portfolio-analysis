@@ -14,5 +14,5 @@
   "rsrcPath": [
     "R"
   ],
-  "importLibrariesFromProjects": []
+  "importLibrariesFromProjects": ["RECOMMANDER"]
 }
