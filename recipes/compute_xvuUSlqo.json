@@ -16,7 +16,16 @@
   },
   "redispatchPartitioning": false,
   "maxRunningActivities": 0,
-  "inputs": {},
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "aktVDyjf",
+          "deps": []
+        }
+      ]
+    }
+  },
   "outputs": {
     "main": {
       "items": [
@@ -28,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590514353122
+    "lastModifiedOn": 1590568399271
   },
   "creationTag": {
     "versionNumber": 0,
