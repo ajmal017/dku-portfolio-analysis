@@ -113,7 +113,7 @@
       }
     }
   },
-  "name": "Portfolio Analysis",
+  "name": "Portfolio Analysis (dev)",
   "imgPattern": 5,
   "showInitials": false,
   "metrics": {
@@ -171,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590669074538
+    "lastModifiedOn": 1590669090381
   },
   "creationTag": {
     "versionNumber": 0,
@@ -184,7 +184,7 @@
     },
     "lastModifiedOn": 1589301372733
   },
-  "shortDesc": "The project *Portfolio Analysis* was created by Administrator on May 12th 2020",
+  "shortDesc": "The project *Portfolio Analysis* was created by Administrator on May 12th 2020\nThe project *PORTFOLIO_ANALYSIS_DEV* was copied from *PORTFOLIOANALYSIS* by Administrator on mai 28th 2020",
   "tags": [
     "duplicated"
   ],
